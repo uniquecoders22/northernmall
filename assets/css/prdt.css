@@ -71,12 +71,12 @@ nav {
 }
 
 .dropdown_menu1 ul li {
-  width: 100px;
+  width: 120px;
   padding: 10px;
 }
 
 .fa {
-  margin: 6px;
+  margin: 8px 8px;
 }
 
 .menu_bar ul li:hover .dropdown_menu1 {
@@ -88,7 +88,7 @@ nav {
 .fa-phone,
 .fa-location-dot,
 .fa-envelope {
-  margin: 12px;
+  margin: 7px;
 }
 
 .muka {
@@ -139,56 +139,39 @@ nav {
 .container {
   background: transparent;
 }
-.search_box {
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-}
 
 .search_wrap {
-  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border: #364f6b solid 1px;
   margin: 30px auto;
-  right: 100px;
-}
-.search_wrap .search_box {
-  position: relative;
-  width: 550px;
-  height: 40px;
-}
-
-.search_wrap .search_box .input {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  padding: 20px 20px;
   border-radius: 25px;
+}
+.search_wrap .input {
+  width: 23rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+
+  border: 0;
+  outline: none;
   font-size: 15px;
 }
 
-.search_wrap .search_box .btn {
-  position: absolute;
-  top: 2px;
-  right: 276px;
+.search_wrap .btn-common {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  background: #364f6b;
-  z-index: 1;
+  margin-right: auto;
+  background: #000;
+  color: white;
   cursor: pointer;
   border-radius: 25px;
 }
 
 .search_wrap .search_box .btn:hover {
   background-color: #43dde6;
-}
-
-.search_wrap .search_box .btn.btn_common .fas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffff;
 }
 
 
@@ -327,7 +310,7 @@ hr{
 
 .foot-container {
   max-width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-color: #364f6b;
   color: white;
   margin: auto;

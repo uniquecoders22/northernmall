@@ -1,11 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   position: relative;
   background: #d9d9d9;
+
 }
 .ti {
   position: relative;
@@ -167,133 +169,179 @@ nav {
   background-color: #43dde6;
 }
 
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  height: 80vh;
-  margin-top: 100px;
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d5d5d5;
+    
 }
 
-.wrapper h1 {
-  padding: 30px 0;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: white;
 }
 
-.project {
-  display: flex;
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
 }
 
-.shop {
-  flex: 75%;
+form{
+    margin-top: 30px;
 }
 
-.box {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: #ffff;
-  transition: all 0.6s ease;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
 }
 
-.box:hover {
-  transform: scale(1.02);
+/* form button{
+    width: 400px;
+    margin: 0 auto;
+    margin-left: 20px;
+} */
+
+.field input, .field button{
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+
+    
 }
 
-.box img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #dedede;
+    
 }
 
-.content {
-  padding: 20px;
-  position: relative;
-  width: 100%;
+.field input:focus{
+    border-bottom-width: 2px;
 }
 
-.content h3 {
-  margin-bottom: 30px;
+.fa-eye-slash{
+    font-size: 16px;
+    color: #dedede;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+
 }
 
-.content h4 {
-  margin-bottom: 50px;
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+    
 }
 
-.btn-area {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 25px;
-  background-color: #fc5185;
-  color: #ffff;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: 600;
+.form-link span,
+.form-link span a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+
 }
 
-.btn-area:hover {
-  background-color: #43dde6;
-  color: #ffff;
+.form a{
+    color: blue;
+    text-decoration: none;
+    
 }
 
-.unit input {
-  width: 50px;
-  padding: 8px;
-  text-align: center;
+.form-content a:hover{
+    text-decoration: underline;
 }
 
-.btn-area i {
-  margin-right: 5px;
+.line{
+    height: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #dedede;
+    margin: 36px 0;
+    /* margin-top: 50px; */
 }
 
-.right-bar {
-  flex: 25%;
-  margin-left: 20px;
-  padding: 20px;
-  height: 250px;
-  border-radius: 5px;
-  background: #ffff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+.line::before{
+    content: "or";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 0 15px;
+    /* margin-top: 30px; */
 }
 
-.right-bar hr {
-  margin-bottom: 20px;
+button{
+    background-color: blue;
+    color: #ffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.right-bar p {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2px;
-  font-size: 20px;
+button:hover{
+    background-color: rgb(37, 37, 121);
 }
 
-.right-bar #total {
-  font-weight: 600;
+.media-options a{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.right-bar a {
-  background-color: #fc5185;
-  color: #ffff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  margin: 30px;
-  font-weight: 900;
-  border-radius: 20px;
+.facebook, p{
+    color: #ffff;
+    background-color: rgb(50, 50, 168);
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.right-bar a:hover {
-  background-color: #364f6b;
+a .facebook ,.fa-facebook-f{
+    color: blue;
+    height: 28px;
+    width: 28px;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #ffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.fa-facebook-f{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    align-items: center;
+}
+ 
 
 
 .foot-container {
