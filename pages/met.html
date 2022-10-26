@@ -37,7 +37,7 @@
                 </div>
             </li>
 
-            <li><a href="#"> <i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+            <li><a href="../pages/cart.htm"> <i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
         </ul>
 
     </div>
@@ -73,13 +73,23 @@
     <section class="delivery">
      <div class="del-met">
         <h2>DELIVERY METHOD</h2>
-        <div>
-        <h3>How do you want your order delivered?</h3>
+        <h3 class="order">How do you want your order delivered?</h3>
         </div>
+
      </div>
-       <div class="radio-item"><input type="radio"><label for="">Home & Office Delivery</label></div>
-       <div class="radio-item"><input type="radio"><label for="">Intercity <Pick-up></Pick-up></label></div>
+       <div class="radio-item"><input type="radio" name="radio" id="radio1"><label for="radio1">Home & Office Delivery</label></div>
+       <div class="radio-item"><input type="radio" name="radio" id="radio2"><label for="radio2">Intercity Pick-up</label></div>
      </div>
+
+
+     <div class="right-bar">
+                    <p><span>Subtotal</span><span>GH₵20.00</span></p>
+                    
+                    <p><span>Tax(5%)</span><span>GH₵5.00</span></p>
+                    
+                    <p><span>Delivery</span><span>GH₵15.00</span></p>
+                
+                    <p id="total"><span>Total</span><span>GH₵40.00</span></p>
      
     
      

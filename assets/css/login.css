@@ -295,14 +295,14 @@ form{
 }
 
 button{
-    background-color: blue;
+    background-color: #fc5185;
     color: #ffff;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(37, 37, 121);
+    background-color:#f23fa2;
 }
 
 .media-options a{
@@ -315,7 +315,7 @@ button:hover{
 
 .facebook, p{
     color: #ffff;
-    background-color: rgb(50, 50, 168);
+    background-color: blue;
     font-weight: 600;
     font-size: 18px;
 }
