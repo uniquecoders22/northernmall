@@ -260,14 +260,15 @@ display: none;
     border-color: #fc5185;
 }
 
-.radio-item[type="radio"],:checked~label:before{
+.radio-item1, .radio-item2[type="radio"],:checked~label:before{
     opacity: 1;
     visibility: visible;
     transform: scale(1);
 }
 
-
-
+#radio2{
+  font-weight: 800;
+}
 
 
 
