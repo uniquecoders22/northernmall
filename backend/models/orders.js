@@ -4,11 +4,14 @@ const { model, Schema } = mongoose;
 
 exports.Order = model(
   "Order",
-  new Schema({
-    name: String,
-    price: Number,
-    image: String,
-    quantity:Number,
-    
-  })
+  new Schema(
+    {
+      name: String,
+      image: String,
+      Qnty: Number,
+    },
+    {
+      timestamps: true,
+    }
+  )
 );

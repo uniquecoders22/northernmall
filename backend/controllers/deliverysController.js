@@ -1,11 +1,11 @@
-const { Order } = require("../models/orders");
+const { Delivvery } = require("../models/deliverys");
 
-exports.addOrder = async (req, res) => {
+exports.addDelivery = async (req, res) => {
   try {
-    const order = await Order.create(req.body);
+    const delivery = await Delivery.create(req.body);
     res.status(201).json({
       succes: true,
-      data: order,
+      data: delivery,
     });
   } catch (error) {
     res.status(400).json({
@@ -15,14 +15,13 @@ exports.addOrder = async (req, res) => {
   }
 };
 
-
-exports.getAllOrders = async (req, res) => {
+exports.getAllDelivery= async (req, res) => {
   try {
-    const orders = await Orders.find();
+    const delivery = await Delivery.find();
     res.status(202).json({
       succes: true,
-      counts: orders.length,
-      data: orders,
+      counts: delivery.length,
+      data: delivery,
     });
   } catch (error) {
     res.status(202).json({
@@ -32,13 +31,12 @@ exports.getAllOrders = async (req, res) => {
   }
 };
 
-
-exports.getAOrder = async (req, res) => {
+exports.getAdelivery = async (req, res) => {
   try {
-    const order = await order.findById(req.params.id);
+    const order = await delivery.findById(req.params.id);
     res.status(200).json({
       succes: true,
-      data: order,
+      data: delivery,
     });
   } catch (error) {
     res.status(400).json({
